@@ -1,0 +1,65 @@
+{
+	"apiVersion": 2,
+	"name": "weblegend/about-us",
+	"title": "About us",
+	"description": "Blok wyświetlający informacje o nas",
+	"category": "weblegend-blocks",
+	"icon": "block-default",
+	"textdomain": "weblegend-block",
+	"supports": {
+		"html": false,
+		"anchor": true,
+		"customClassName": true
+	},
+	"attributes": {
+		"headline": {
+			"type": "object",
+			"default": {
+				"content": "O nas",
+				"tag": "h2"
+			}
+		},
+		"content": {
+			"type": "string",
+			"default": ""
+		},
+		"columns": {
+			"type": "array",
+			"default": []
+		},
+		"image": {
+			"type": "object",
+			"default": ""
+		},
+		"image_info": {
+			"type": "object",
+			"default": ""
+		},
+		"link": {
+			"type": "object",
+			"default": {
+				"url": "",
+				"opensInNewTab": false,
+				"title": ""
+			}
+		},
+		"textColor": {
+			"type": "string",
+			"default": ""
+		},
+		"svgColor": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": ""
+		},
+		"anchor": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./template.php"
+}
